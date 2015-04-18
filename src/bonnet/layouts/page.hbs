@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+
+    {{>site-header}}
+
+    <main class="content">
+      <h1>{{this.page.title}}</h1>
+
+      {{> body}}
+    </main>
+
+    {{>site-footer}}
+
+  </body>
+</html>
