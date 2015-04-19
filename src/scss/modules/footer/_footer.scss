@@ -1,0 +1,15 @@
+
+.footer {
+  @extend %clearfix;
+  background-color: $c-background;
+  // border-top: 3px solid $c-mercury;
+  padding: 30px;
+
+  &__copyright {
+    float: left;
+  }
+
+  &__attribution {
+    display: none;
+  }
+}

@@ -13,6 +13,11 @@
   &__link {
     text-decoration: none;
     color: $c-gray;
-    padding: 0 30px;
+    padding: 15px 30px;
+    letter-spacing: .05em;
+
+    &:hover {
+      color: #a7fbe8;
+    }
   }
 }

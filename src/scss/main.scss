@@ -5,10 +5,17 @@
 
 @import 'reset';
 
-
+// Header Styles
 @import 'modules/header/header';
 @import 'modules/header/header-menu';
 @import 'modules/header/header-social';
+
+// Footer Styles
+@import 'modules/footer/footer';
+
+
+// Homepage Styles
+@import 'modules/homepage/homepage-image';
 
 
 @import 'fonts';
