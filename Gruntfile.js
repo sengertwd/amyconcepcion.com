@@ -57,9 +57,39 @@ module.exports = function (grunt) {
         dest: 'src/css/main.pref.css'
       }
     },
+    cssmin: {
+      dist: {
+        files: {
+          'dest/css/main.min.css': ['src/css/main.pref.css']
+        }
+      }
+    },
+    svgstore: {
+      options: {
+        prefix: 'icon-',
+        svg: {
+          viewBox: '0 0 100 100',
+          xmlns: 'http://www.w3.org/2000/svg',
+          style: 'display:none;'
+        }
+      },
+      default: {
+        files: {
+          'src/bonnet/partials/site-svg.hbs': ['src/svg/**/*.svg']
+        }
+      }
+    },
+    concurrent: {
+      target: {
+        tasks: ['connect','watch'],
+        options: {
+          logConcurrentOutput: true
+        }
+      }
+    },
     watch: {
       styles: {
-        tasks: ['sass','autoprefixer'],
+        tasks: ['sass','autoprefixer', 'cssmin'],
         files: ['src/scss/**/*.scss'],
         options: {
           atBegin: true,
@@ -73,6 +103,22 @@ module.exports = function (grunt) {
           atBegin: true,
           spawn: false
         }
+      },
+      svg: {
+        tasks: ['svgstore'],
+        files: ['src/svg/**/*.svg'],
+        options: {
+          atBegin: true,
+          spawn: false
+        }
+      },
+      assemble: {
+        tasks: ['assemble'],
+        files: ['src/**/*.hbs'],
+        options: {
+          atBegin: true,
+          spawn: false
+        }
       }
     }
   });
@@ -82,10 +128,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-svgstore');
+  grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('assemble');
 
   /* grunt tasks */
-  grunt.registerTask('default', ['watch', 'assemble']);
+  grunt.registerTask('default', ['concurrent']);
 
 };

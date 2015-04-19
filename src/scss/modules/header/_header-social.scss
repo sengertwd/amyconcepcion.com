@@ -1,0 +1,18 @@
+.social {
+  float: right;
+
+  &__item {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  .icon {
+    height: 20px;
+    width: 20px;
+    fill: $c-gray;
+  }
+}

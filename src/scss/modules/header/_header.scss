@@ -1,0 +1,29 @@
+
+.header {
+  @extend %clearfix;
+  background-color: $c-white;
+  border-bottom: 3px solid $c-mercury;
+  padding: 30px;
+
+  &__logo {
+    width: auto;
+    float: left;
+
+    a,
+    .logo__site{
+      height: 50px;
+      display: block;
+    }
+
+    .logo__site {
+      width: 130px;
+    }
+  }
+
+  &__nav {
+    a {
+      font-family: $c-font-bebas;
+    }
+  }
+
+}
