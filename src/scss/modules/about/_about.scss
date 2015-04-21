@@ -1,0 +1,27 @@
+.about {
+  display: flex;
+  padding: 100px $default-margin;
+
+  &__blurb {
+    width: span(1);
+
+    h1 {
+      @extend %header-font;
+      font-size: 32px;
+    }
+
+    ul {
+      padding-left: 1em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__info {
+    width: span(2);
+    margin-left: $margin;
+
+    p {
+      line-height: 2;
+    }
+  }
+}

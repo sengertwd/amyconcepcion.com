@@ -15,7 +15,7 @@
   display: block;
 }
 
-.project__info h1, .identity__description h1, .project__template .project__blurb h1 {
+.about__blurb h1, .project__info h1, .identity__description h1, .project__template .project__blurb h1 {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.05em;
 }
@@ -126,6 +126,28 @@ p {
 }
 .footer__attribution {
   display: none;
+}
+
+.about {
+  display: flex;
+  padding: 100px 50px;
+}
+.about__blurb {
+  width: 32.17%;
+}
+.about__blurb h1 {
+  font-size: 32px;
+}
+.about__blurb ul {
+  padding-left: 1em;
+  text-transform: uppercase;
+}
+.about__info {
+  width: 66.007%;
+  margin-left: 1.667%;
+}
+.about__info p {
+  line-height: 2;
 }
 
 .project__identity {
