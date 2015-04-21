@@ -3,7 +3,7 @@
   @extend %clearfix;
   background-color: $c-background;
   // border-top: 3px solid $c-mercury;
-  padding: 30px;
+  padding: 30px $default-margin;
 
   &__copyright {
     float: left;
