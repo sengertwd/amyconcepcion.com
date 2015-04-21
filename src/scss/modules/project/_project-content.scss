@@ -1,12 +1,12 @@
 .project {
   &__content {
     display: flex;
-    padding: 100px 30px;
+    padding: 100px 0;
   }
 
   &__info {
     width: span(1);
-    // padding-left: 30px;
+    padding-left: $default-margin;
 
     h1 {
       @extend %header-font;
@@ -16,6 +16,6 @@
   }
   &__description {
     width: span(2);
-    // padding-right: 30px;
+    padding-right: $default-margin;
   }
 }

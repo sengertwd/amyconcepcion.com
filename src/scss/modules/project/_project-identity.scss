@@ -1,7 +1,7 @@
 .identity {
 
   &__sketch {
-    width: span(1) + 1.667%;
+    width: span(1);
     float: left;
   }
 
@@ -28,7 +28,7 @@
     }
   }
   &__description {
-    padding-right: 30px;
+    padding-right: $default-margin;
 
     h1 {
       @extend %header-font;
