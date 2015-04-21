@@ -3,6 +3,7 @@
 * Oxygen font switched out for Roboto Slab Light
   * if slab is too thin, do regular weight
 * jQuery plugin for the images to be the right width
+* Elevator.js for 'back to top' [Elevator.js](http://tholman.com/elevator.js/)
 
 
 #After the site is due
