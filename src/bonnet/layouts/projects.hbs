@@ -1,3 +1,14 @@
 ---
+title: "My Work"
 layout: page.hbs
 ---
+
+<h4>this is a fricken test</h4>
+
+<ul>
+  {{#withSort project 'data.posted'}}
+    {{#each this.pages}}
+      <li><a href="{{ replaceStr this.dest 'dest' ''}}">{{this.data.title}}</a></li>
+    {{/each}}
+  {{/withSort}}
+</ul>

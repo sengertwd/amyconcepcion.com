@@ -6,7 +6,13 @@ module.exports = function (grunt) {
       options: {
         layout: 'page.hbs',
         layoutdir: './src/bonnet/layouts/',
-        partials: './src/bonnet/partials/**/*.hbs'
+        partials: './src/bonnet/partials/**/*.hbs',
+        helpers: './src/bonnet/helpers/**/*.js',
+        collections: [{
+          name: 'project',
+          sortby: 'posted',
+          sortorder: 'desending'
+        }]
       },
       posts: {
         files: [{

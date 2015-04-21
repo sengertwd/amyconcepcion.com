@@ -10,6 +10,16 @@
   list-style-type: none;
 }
 
+.homepage__image img, .project__header img, .project__footer img {
+  width: 100%;
+  display: block;
+}
+
+.project__info h1, .identity__description h1 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.05em;
+}
+
 *,
 *:before,
 *:after {
@@ -28,6 +38,10 @@ h3, h4,
 h5, h6 {
   margin: 0;
   line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
 }
 
 .header {
@@ -114,9 +128,54 @@ h5, h6 {
   display: none;
 }
 
-.homepage__image img {
-  width: 100%;
-  display: block;
+.project__identity {
+  display: flex;
+}
+
+.project__content {
+  display: flex;
+  padding: 100px 30px;
+}
+.project__info {
+  width: 31.91%;
+}
+.project__info h1 {
+  font-size: 36px;
+  line-height: 36px;
+}
+.project__description {
+  width: 65.487%;
+}
+
+.identity__sketch {
+  width: 33.577%;
+  float: left;
+}
+.identity__finished, .identity__description {
+  margin-left: 1.667%;
+  width: 31.91%;
+  float: left;
+}
+.identity__sketch, .identity__finished {
+  position: relative;
+}
+.identity__sketch .expander, .identity__finished .expander {
+  position: relative;
+  padding-bottom: 110.96%;
+  height: 0;
+}
+.identity__sketch img, .identity__finished img {
+  position: absolute;
+  top: 0;
+}
+.identity__description {
+  padding-right: 30px;
+}
+.identity__description h1 {
+  font-size: 30px;
+}
+.identity__description p {
+  line-height: 2;
 }
 
 @font-face {

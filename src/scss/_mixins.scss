@@ -1,0 +1,19 @@
+// @mixin span (num) {
+
+// }
+
+
+@function span ($num) {
+  $margin: 1.667%;
+  $width: 31.91%;
+
+  // if the number is greater than 1
+  // we need to do some math
+  @if $num == 3 {
+    @return 100%;
+  } @else if $num == 2 {
+    @return (($width * $num) + ($margin * ($num - 1)));
+  } @else {
+    @return ($width);
+  }
+}

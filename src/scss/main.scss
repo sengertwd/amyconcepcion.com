@@ -1,6 +1,8 @@
 
 
 @import 'variables';
+@import 'mixins';
+
 @import 'placeholder';
 
 @import 'reset';
@@ -16,6 +18,13 @@
 
 // Homepage Styles
 @import 'modules/homepage/homepage-image';
+
+
+@import 'modules/project/project';
+@import 'modules/project/project-header';
+@import 'modules/project/project-content';
+@import 'modules/project/project-identity';
+@import 'modules/project/project-footer';
 
 
 @import 'fonts';

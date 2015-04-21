@@ -1,0 +1,21 @@
+.project {
+  &__content {
+    display: flex;
+    padding: 100px 30px;
+  }
+
+  &__info {
+    width: span(1);
+    // padding-left: 30px;
+
+    h1 {
+      @extend %header-font;
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+  &__description {
+    width: span(2);
+    // padding-right: 30px;
+  }
+}
