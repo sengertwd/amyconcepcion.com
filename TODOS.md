@@ -10,7 +10,7 @@
 #Scott
 
 * line height for all content
-* fix footer
+* fix footer [DONE]
 * color for logo
 
 #Amy
