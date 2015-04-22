@@ -1,0 +1,70 @@
+.contact {
+  display: flex;
+  padding: 100px 0;
+
+  &__blurb,
+  &__info,
+  &__resources {
+    width: span(1);
+    margin-left: $margin;
+    @extend %header-font;
+    font-size: 30px;
+    color: $c-gray;
+  }
+
+  &__blurb {
+    padding-left: $default-margin;
+    h1 {
+      line-height: 1em;
+
+    }
+  }
+
+  .download {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: $c-gray;
+  }
+
+  .info__email,
+  .resources__downloads {
+    margin-bottom: 50px;
+  }
+
+  &__social {
+    .menu {
+      text-align: left;
+    }
+    .icon {
+      height: 30px;
+      width: 30px;
+      fill: $c-gray;
+      transition-property: fill;
+      transition-duration: .2s;
+      transition-timing-function: ease-in-out;
+    }
+    a:hover {
+      .social__icon {
+
+        &--dribbble {
+          fill: $c-dribbble;
+        }
+
+        &--twitter {
+          fill: $c-twitter;
+        }
+
+        &--linkedin {
+          fill: $c-linkedin;
+        }
+
+        &--behance {
+          fill: $c-behance;
+        }
+      }
+    }
+  }
+}

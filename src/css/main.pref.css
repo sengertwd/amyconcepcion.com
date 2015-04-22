@@ -15,7 +15,7 @@
   display: block;
 }
 
-.about__blurb h1, .project__info h1, .identity__description h1, .project__template .project__blurb h1 {
+.about__blurb h1, .contact__blurb, .contact__info, .contact__resources, .project__info h1, .identity__description h1, .project__template .project__blurb h1 {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.05em;
 }
@@ -31,6 +31,11 @@ body {
   font-family: "Roboto Slab", serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  height: 100%;
 }
 
 h1, h2,
@@ -42,6 +47,11 @@ h5, h6 {
 
 p {
   margin-top: 0;
+}
+
+main {
+  padding-bottom: 82px;
+  min-height: Calc(100% - 110px);
 }
 
 .header {
@@ -120,6 +130,7 @@ p {
 .footer {
   background-color: #f7f3f1;
   padding: 30px 50px;
+  margin-top: -82px;
 }
 .footer__copyright {
   float: left;
@@ -150,6 +161,59 @@ p {
 }
 .about__info p {
   line-height: 2;
+}
+
+.contact {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+.contact__blurb, .contact__info, .contact__resources {
+  width: 32.17%;
+  margin-left: 1.667%;
+  font-size: 30px;
+  color: #7f7f7f;
+}
+.contact__blurb {
+  padding-left: 50px;
+}
+.contact__blurb h1 {
+  line-height: 1em;
+}
+.contact .download {
+  display: block;
+}
+.contact a {
+  text-decoration: none;
+  color: #7f7f7f;
+}
+.contact .info__email,
+.contact .resources__downloads {
+  margin-bottom: 50px;
+}
+.contact__social .menu {
+  text-align: left;
+}
+.contact__social .icon {
+  height: 30px;
+  width: 30px;
+  fill: #7f7f7f;
+  transition-property: fill;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+.contact__social a:hover .social__icon--dribbble {
+  fill: #ea4c89;
+}
+.contact__social a:hover .social__icon--twitter {
+  fill: #55acee;
+}
+.contact__social a:hover .social__icon--linkedin {
+  fill: #0077b5;
+}
+.contact__social a:hover .social__icon--behance {
+  fill: #3fc0f0;
 }
 
 .projects__row {

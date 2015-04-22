@@ -7,20 +7,23 @@
 
 @import 'reset';
 
-// Header Styles
+// Header styles
 @import 'modules/header/header';
 @import 'modules/header/header-menu';
 @import 'modules/header/header-social';
 
-// Footer Styles
+// Footer styles
 @import 'modules/footer/footer';
 
 
-// Homepage Styles
+// Homepage styles
 @import 'modules/homepage/homepage-image';
 
 // About page styles
 @import 'modules/about/about';
+
+// Contact page styles
+@import 'modules/contact/contact';
 
 // Projects page styles
 @import 'modules/projects/projects';
