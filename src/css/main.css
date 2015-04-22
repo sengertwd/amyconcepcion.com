@@ -70,6 +70,7 @@ main {
 .header__logo .logo__site {
   height: 50px;
   display: block;
+  fill: black;
 }
 .header__logo .logo__site {
   width: 130px;
