@@ -25,3 +25,18 @@
     font-style: normal;
 
 }
+
+
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/fonts/roboto-slab/robotoslab-light-webfont.eot');
+    src: url('/fonts/roboto-slab/robotoslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/roboto-slab/robotoslab-light-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-slab/robotoslab-light-webfont.woff') format('woff'),
+         url('/fonts/roboto-slab/robotoslab-light-webfont.ttf') format('truetype'),
+         url('/fonts/roboto-slab/robotoslab-light-webfont.svg#roboto_slablight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}

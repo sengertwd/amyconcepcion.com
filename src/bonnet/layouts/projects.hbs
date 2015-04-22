@@ -3,12 +3,16 @@ title: "My Work"
 layout: page.hbs
 ---
 
-<h4>this is a fricken test</h4>
+{{!-- <h4>this is a fricken test</h4> --}}
 
-<ul>
+<div class="projects__row">
   {{#withSort project 'data.posted'}}
     {{#each this.pages}}
-      <li><a href="{{ replaceStr this.dest 'dest' ''}}">{{this.data.title}}</a></li>
+      <a class="projects__imglink" href="{{ replaceStr this.dest 'dest' ''}}">
+        {{!-- {{this.data.title}} --}}
+        <div class="expander"></div>
+        <img src="{{#if this.data.projectImage }}{{this.data.projectImage}}{{else}}http://placehold.it/400x300{{/if}}" alt="">
+      </a>
     {{/each}}
   {{/withSort}}
-</ul>
+</div>

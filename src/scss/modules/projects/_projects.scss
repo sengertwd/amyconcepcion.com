@@ -1,0 +1,40 @@
+
+.projects__row {
+  @extend %clearfix;
+  margin: $default-margin 0;
+}
+
+
+.projects__imglink {
+  width: span(1);
+  display: block;
+  margin-left: $margin;
+  float: left;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:nth-child(4n) {
+    margin-left: 0;
+  }
+
+  .expander {
+    position: relative;
+    width: 100%;
+    padding-bottom: 52.219%;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 100%;
+    min-width: 100%;
+  }
+}

@@ -19,9 +19,11 @@ $c-background: rgb(247,243,241);
 
 $font-bebas: "Bebas Neue", sans-serif;
 $font-oxygen: "Oxygen", sans-serif;
+$font-slab: "Roboto Slab", serif;
 
 
-$font-body: $font-oxygen;
+// $font-body: $font-oxygen;
+$font-body: $font-slab;
 
 
 $default-margin: 50px;
