@@ -8,6 +8,7 @@
 
   .project__image {
     position: relative;
+    overflow: hidden;
 
     .expander {
       position: relative;
@@ -16,8 +17,13 @@
 
     img {
       position: absolute;
-      top: 0;
+      // top: 0;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
       display: block;
+      min-height: 100%;
+      min-width: 100%;
     }
   }
 
@@ -48,7 +54,8 @@
 
   .project__blurb {
     width: span(1);
-    padding-left: $default-margin;
+    padding: $default-margin;
+    padding-right: 0;
   }
 
   .project__image--double {
@@ -120,7 +127,8 @@
     flex-direction: column;
 
     .project__blurb {
-      padding: 25px $default-margin 25px 0;
+      padding: $default-margin;
+      padding-left: 0;
       flex: 1;
       margin-bottom: 25px;
     }
@@ -139,6 +147,7 @@
 
 .project__template--four-tall-left-stack {
   display: flex;
+  margin-bottom: 25px;
   .template__stacked {
     display: flex;
     flex-direction: column;
@@ -151,7 +160,7 @@
     }
     .project__blurb {
       flex: 1;
-      padding-left: $default-margin;
+      padding: $default-margin;
     }
   }
 

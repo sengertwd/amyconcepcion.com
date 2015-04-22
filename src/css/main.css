@@ -152,6 +152,7 @@ p {
 
 .project__identity {
   display: flex;
+  margin-bottom: 25px;
 }
 
 .project__content {
@@ -168,6 +169,7 @@ p {
 }
 .project__description {
   width: 66.007%;
+  margin-left: 1.667%;
   padding-right: 50px;
 }
 
@@ -182,6 +184,7 @@ p {
 }
 .identity__sketch, .identity__finished {
   position: relative;
+  overflow: hidden;
 }
 .identity__sketch .expander, .identity__finished .expander {
   position: relative;
@@ -190,7 +193,11 @@ p {
 }
 .identity__sketch img, .identity__finished img {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-height: 100%;
+  min-width: 100%;
 }
 .identity__description {
   padding-right: 50px;
@@ -208,6 +215,7 @@ p {
 }
 .project__template .project__image {
   position: relative;
+  overflow: hidden;
 }
 .project__template .project__image .expander {
   position: relative;
@@ -215,8 +223,12 @@ p {
 }
 .project__template .project__image img {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   display: block;
+  min-height: 100%;
+  min-width: 100%;
 }
 .project__template .project__blurb h1 {
   font-size: 30px;
@@ -236,7 +248,8 @@ p {
 }
 .project__template--tri-text-double .project__blurb {
   width: 32.17%;
-  padding-left: 50px;
+  padding: 50px;
+  padding-right: 0;
 }
 .project__template--tri-text-double .project__image--double {
   width: 66.007%;
@@ -299,7 +312,8 @@ p {
   flex-direction: column;
 }
 .project__template--two-tall-right-stack .template__stacked .project__blurb {
-  padding: 25px 50px 25px 0;
+  padding: 50px;
+  padding-left: 0;
   flex: 1;
   margin-bottom: 25px;
 }
@@ -315,6 +329,7 @@ p {
 
 .project__template--four-tall-left-stack {
   display: flex;
+  margin-bottom: 25px;
 }
 .project__template--four-tall-left-stack .template__stacked {
   display: flex;
@@ -329,7 +344,7 @@ p {
 }
 .project__template--four-tall-left-stack .template__stacked .project__blurb {
   flex: 1;
-  padding-left: 50px;
+  padding: 50px;
 }
 .project__template--four-tall-left-stack > .project__image {
   width: 66.007%;

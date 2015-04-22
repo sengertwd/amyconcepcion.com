@@ -15,6 +15,7 @@
   &__sketch,
   &__finished {
     position: relative;
+    overflow: hidden;
     .expander {
       position: relative;
       // padding-bottom: 90%;
@@ -24,7 +25,11 @@
 
     img {
       position: absolute;
-      top: 0;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      min-height: 100%;
+      min-width: 100%;
     }
   }
   &__description {
