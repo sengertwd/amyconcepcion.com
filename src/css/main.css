@@ -70,7 +70,7 @@ main {
 .header__logo .logo__site {
   height: 50px;
   display: block;
-  fill: black;
+  fill: #f56496;
 }
 .header__logo .logo__site {
   width: 130px;
@@ -95,7 +95,7 @@ main {
   letter-spacing: .05em;
 }
 .menu__link:hover {
-  color: #a7fbe8;
+  color: #f56496;
 }
 
 .social {
@@ -246,6 +246,9 @@ main {
   transform: translateX(-50%) translateY(-50%);
   min-height: 100%;
   min-width: 100%;
+}
+.projects__imglink img:hover {
+  opacity: .825;
 }
 
 .project__identity {
