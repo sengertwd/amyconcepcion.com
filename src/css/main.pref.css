@@ -20,6 +20,13 @@
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 850px) {
+  .project__template--tri-text-double .project__image, .project__template--tri-text-double .project__blurb, .project__template--tri-text-double .project__image--double, .project__template--two-tall-right .project__image:first-child, .project__template--two-tall-right .project__image:nth-child(2), .project__template--two-right .project__image:first-child, .project__template--two-right .project__image:nth-child(2), .project__template--two-tall-right-stack .project__image, .project__template--two-tall-right-stack .template__stacked, .project__template--two-tall-right-stack .template__stacked .project__image, .project__template--four-tall-left-stack .template__stacked, .project__template--four-tall-left-stack > .project__image {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -330,6 +337,11 @@ main {
   display: flex;
   margin-bottom: 25px;
 }
+@media (max-width: 850px) {
+  .project__template .project__template-row {
+    display: block;
+  }
+}
 .project__template .project__image {
   position: relative;
   overflow: hidden;
@@ -438,6 +450,11 @@ main {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 850px) {
+  .project__template--two-tall-right-stack .template__stacked {
+    display: block;
+  }
 }
 .project__template--two-tall-right-stack .template__stacked .project__blurb {
   padding: 50px;

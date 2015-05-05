@@ -4,6 +4,10 @@
     // &:first-child {
       margin-bottom: 25px;
     // }
+
+    @include media-mobile {
+      display: block;
+    }
   }
 
   .project__image {
@@ -51,12 +55,15 @@
     .expander {
       padding-bottom: 52.219%;
     }
+
+    @extend %project-bob;
   }
 
   .project__blurb {
     width: span(1);
     padding: $default-margin;
     padding-right: 0;
+      @extend %project-bob;
   }
 
   .project__image--double {
@@ -66,6 +73,7 @@
     .expander {
       padding-bottom: 59.975%;
     }
+    @extend %project-bob;
   }
 }
 
@@ -79,6 +87,7 @@
     .expander {
       padding-bottom: 176.24%;
     }
+    @extend %project-bob;
   }
   .project__image:nth-child(2) {
     width: span(2);
@@ -86,6 +95,7 @@
     .expander {
       padding-bottom: 82.07%;
     }
+    @extend %project-bob;
   }
 
 }
@@ -100,6 +110,7 @@
     .expander {
       padding-bottom: 53.662%;
     }
+    @extend %project-bob;
   }
   .project__image:nth-child(2) {
     width: span(1);
@@ -107,6 +118,7 @@
     .expander {
       padding-bottom: 110.966%;
     }
+    @extend %project-bob;
   }
 }
 
@@ -120,6 +132,7 @@
     .expander {
       padding-bottom: 176.24%;
     }
+    @extend %project-bob;
   }
 
   .template__stacked {
@@ -127,6 +140,11 @@
     margin-left: $margin;
     display: flex;
     flex-direction: column;
+    @extend %project-bob;
+
+    @include media-mobile {
+      display: block;
+    }
 
     .project__blurb {
       padding: $default-margin;
@@ -143,6 +161,7 @@
       .expander {
         padding-bottom: 53.662%;
       }
+      @extend %project-bob;
     }
   }
 }
@@ -155,6 +174,7 @@
     display: flex;
     flex-direction: column;
     width: span(1);
+      @extend %project-bob;
     .project__image {
       flex: 1;
       width: 100%;
@@ -173,6 +193,7 @@
     .expander {
       padding-bottom: 110.479%;
     }
+      @extend %project-bob;
   }
 
 }

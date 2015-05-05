@@ -29,3 +29,10 @@
   font-family: $font-bebas;
   letter-spacing: 0.05em;
 }
+
+%project-bob {
+  @media (max-width: 850px) {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
