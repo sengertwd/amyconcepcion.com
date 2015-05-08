@@ -69,6 +69,11 @@ main {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 850px) {
+  .header {
+    padding: 30px 20px;
+  }
+}
 .header__logo {
   width: auto;
   float: left;

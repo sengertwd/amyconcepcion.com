@@ -9,6 +9,10 @@
   position: relative;
   z-index: 2;
 
+  @include media-mobile {
+    padding: 30px 20px;
+  }
+
   &__logo {
     width: auto;
     float: left;
