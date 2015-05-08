@@ -1,6 +1,9 @@
 .contact {
   display: flex;
   padding: 100px 0;
+  @include media-mobile {
+    display: block;
+  }
 
   &__blurb,
   &__info,
@@ -10,6 +13,11 @@
     @extend %header-font;
     font-size: 30px;
     color: $c-gray;
+    @extend %project-bob;
+    @include media-mobile {
+      padding: 0 $default-margin;
+      margin-bottom: $default-margin;
+    }
   }
 
   &__blurb {

@@ -41,6 +41,9 @@
 
 
 .project__template--tri-text-double {
+    @include media-mobile {
+      display: block;
+    }
 
   .project__image {
     width: span(1);
@@ -64,6 +67,10 @@
     padding: $default-margin;
     padding-right: 0;
       @extend %project-bob;
+
+    @include media-mobile {
+      padding: $default-margin;
+    }
   }
 
   .project__image--double {
@@ -81,6 +88,9 @@
 .project__template--two-tall-right {
   display: flex;
   margin-bottom: 25px;
+  @include media-mobile {
+    display: block;
+  }
 
   .project__image:first-child {
     width: span(1);
@@ -104,6 +114,9 @@
 .project__template--two-right {
   display: flex;
   margin-bottom: 25px;
+  @include media-mobile {
+    display: block;
+  }
 
   .project__image:first-child {
     width: span(2);
@@ -126,6 +139,9 @@
 .project__template--two-tall-right-stack {
   display: flex;
   margin-bottom: 25px;
+  @include media-mobile {
+    display: block;
+  }
 
   .project__image {
     width: span(1);
@@ -151,6 +167,10 @@
       padding-left: 0;
       flex: 1;
       margin-bottom: 25px;
+
+      @include media-mobile {
+        padding: $default-margin;
+      }
     }
     .project__image {
       width: 100%;
@@ -170,6 +190,9 @@
 .project__template--four-tall-left-stack {
   display: flex;
   margin-bottom: 25px;
+  @include media-mobile {
+    display: block;
+  }
   .template__stacked {
     display: flex;
     flex-direction: column;

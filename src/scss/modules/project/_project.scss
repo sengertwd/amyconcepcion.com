@@ -4,5 +4,8 @@
   &__identity {
     display: flex;
     margin-bottom: 25px;
+    @include media-mobile {
+      display: block;
+    }
   }
 }

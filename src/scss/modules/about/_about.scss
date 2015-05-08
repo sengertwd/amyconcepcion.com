@@ -2,6 +2,10 @@
   display: flex;
   padding: 100px $default-margin;
 
+  @include media-mobile {
+    display: block;
+  }
+
   &__blurb {
     width: span(1);
 
@@ -15,6 +19,11 @@
       padding-left: 20px;
       text-transform: uppercase;
     }
+    @extend %project-bob;
+
+    @include media-mobile {
+      margin-bottom: $default-margin;
+    }
   }
 
   &__info {
@@ -24,5 +33,6 @@
     p {
       line-height: 2;
     }
+    @extend %project-bob;
   }
 }

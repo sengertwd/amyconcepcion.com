@@ -15,9 +15,20 @@
     color: $c-gray;
     padding: 15px 30px;
     letter-spacing: .05em;
+    @include media-mobile {
+      padding: 15px 10px 0;
+    }
 
     &:hover {
       color: rgb(245,100,150);
     }
+  }
+}
+
+@include media-mobile {
+  .header__nav .menu {
+    height: auto;
+    line-height: normal;
+    margin-top: 15px;
   }
 }
