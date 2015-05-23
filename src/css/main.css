@@ -82,7 +82,7 @@ main {
 .header__logo .logo__site {
   height: 50px;
   display: block;
-  fill: #f56496;
+  fill: #ba034b;
 }
 .header__logo .logo__site {
   width: 130px;
@@ -118,7 +118,7 @@ main {
   }
 }
 .menu__link:hover {
-  color: #f56496;
+  color: #ba034b;
 }
 
 @media (max-width: 850px) {
@@ -168,7 +168,7 @@ main {
   float: left;
 }
 .footer__attribution {
-  display: none;
+  float: right;
 }
 
 .about {
@@ -236,6 +236,9 @@ main {
 .contact a {
   text-decoration: none;
   color: #7f7f7f;
+}
+.contact a:hover {
+  color: #ba034b;
 }
 .contact .info__email,
 .contact .resources__downloads {

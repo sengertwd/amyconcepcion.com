@@ -35,6 +35,10 @@
   a {
     text-decoration: none;
     color: $c-gray;
+
+    &:hover {
+      color: rgb(186,3,75);
+    }
   }
 
   .info__email,
